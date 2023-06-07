@@ -1,0 +1,42 @@
+body{
+    font-family: monospace;
+    height: 100vh;
+    color: white;
+    background-color: #333;
+}
+
+
+
+.text {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+}
+
+.hero-image {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg); 
+    background-image: url('../554-600x400.jpg');
+    transition: transform 1s linear, color 1s 1s;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.hero-image:hover{
+    transform: translate(-50%,-50%) rotate(-360deg);
+    color: yellow;
+}
+
